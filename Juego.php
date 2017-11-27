@@ -27,6 +27,14 @@ function __construct()
 		}
 	}
 
+	public function contarPuntaje($frame1,$frame2,$frame3,$frame4,$frame5,$frame6,$frame7,$frame8,$frame9,$frame10){
+		
+		$suma= array_sum($frame1)+ array_sum($frame2)+ array_sum($frame3)+ array_sum($frame4)+ array_sum($frame5)+ array_sum($frame6)+ array_sum($frame7)+ array_sum($frame8)+array_sum($frame9)+ array_sum($frame10);
+		echo "\n$suma\n";
+		return $suma;
+		
+	}
+
 
 
 

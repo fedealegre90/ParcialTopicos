@@ -24,5 +24,9 @@ final class JuegoTest extends TestCase
         $this->assertCount(2, $totalFrame->verificarFrame([1,2,3]));
     }
 
-
+    public function testverificarTotal(){
+        $totalJuego = new JU();
+        $pleno= [10,0];
+        $this->assertEquals(114,$totalJuego->contarPuntaje([2,3],$pleno,$pleno,[4,5],[3,5],[5,4],[5,4],[6,3],[4,3],[5,5]));
+    }
 }
