@@ -27,12 +27,18 @@ final class JuegoTest extends TestCase
     public function testverificarTotal(){
         $totalJuego = new JU();
         //$pleno= [10,0];
-        $this->assertEquals(114,$totalJuego->contarPuntaje([2,3],[10,0],[10,0],[4,5],[3,5],[5,4],[5,4],[6,3],[4,3],[5,5]));
+        $this->assertEquals(114,$totalJuego->contarPuntaje([2,3],[10,0],[10,0],[4,5],[3,5],[5,4],[5,4],[6,3],[4,3],[5,5],null));
     }
 
     public function testPlenosContinuos(){
         $totalJuego = new JU();
         //$pleno= [10,0];
-        $this->assertEquals(270,$totalJuego->contarPuntaje([10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0]));
+        $this->assertEquals(270,$totalJuego->contarPuntaje([10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],null));
+    }
+
+    public function testPlenosContinuosStrikeExtra(){
+        $totalJuego = new JU();
+        //$pleno= [10,0];
+        $this->assertEquals(300,$totalJuego->contarPuntaje([10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,10]));
     }
 }
