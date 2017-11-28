@@ -66,7 +66,7 @@ function __construct()
 			$sumaFrame=$sumaFrame+$array[$i][0]+$array[$i][1];
 		}	
 		}elseif ($i==8){
-		 	if((($array[$i][0]+$array[$i][1])==$aux) and (($array[$i+1][0]+$array[$i+1][1])<$aux)) {
+		 	if((($array[$i][0]+$array[$i][1])==$aux) and (($array[$i+1][0]+$array[$i+1][1])<=$aux)) {
 			$sumaFrame=$sumaFrame+$array[$i][0]+$array[$i+1][0]+$array[$i+1][1];
 			}else{
 			$sumaFrame=$sumaFrame+$array[$i][0]+$array[$i][1];	

@@ -33,6 +33,6 @@ final class JuegoTest extends TestCase
     public function testPlenosContinuos(){
         $totalJuego = new JU();
         //$pleno= [10,0];
-        $this->assertEquals(280,$totalJuego->contarPuntaje([10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0]));
+        $this->assertEquals(270,$totalJuego->contarPuntaje([10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0]));
     }
 }
