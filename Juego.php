@@ -75,6 +75,11 @@ function __construct()
 			$sumaFrame=$sumaFrame+$array[$i][0]+$array[$i][1];	
 		}
 		}
+		if (($frame10[0]==10) and ($frame9[0])==10) {
+			$sumaFrame=$sumaFrame+$frame11[0]+$frame11[0]+$frame11[1];
+		}elseif (($frame10[0]==10) and ($frame9[0])<10) {
+			$sumaFrame=$sumaFrame+$frame11[0]+$frame11[1];
+		}
 		//$suma= array_sum($frame1)+ array_sum($frame2)+ array_sum($frame3)+ array_sum($frame4)+ array_sum($frame5)+ array_sum($frame6)+ array_sum($frame7)+ array_sum($frame8)+array_sum($frame9)+ array_sum($frame10);
 		//echo "\n$sumaFrame\n";
 		//print_r($array);
